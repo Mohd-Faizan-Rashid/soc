@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid #262626;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Instagram Sans Script', cursive;
+    font-size: 24px;
+    flex: 1;
+}
+
+.search-container {
+    flex: 2;
+    margin: 0 16px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #262626;
+    color: #fff;
+}
+
+/* Post Styles */
+.post {
+    border-bottom: 1px solid #262626;
+    margin-bottom: 12px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.username {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.more-options {
+    margin-left: auto;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+}
+
+.post-actions {
+    display: flex;
+    padding: 12px;
+}
+
+.post-actions i {
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.bookmark {
+    margin-left: auto;
+}
+
+.post-likes {
+    padding: 0 12px;
+    font-weight: 600;
+}
+
+.post-caption, .post-comments {
+    padding: 4px 12px;
+}
+
+.add-comment {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #262626;
+}
+
+.add-comment input {
+    flex: 1;
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 8px;
+}
+
+.add-comment button {
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #000;
+    border-top: 1px solid #262626;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.nav-item {
+    position: relative;
+    padding: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.nav-item:hover {
+    opacity: 0.7;
+}
+
+.nav-item.active i {
+    color: #fff;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff3040;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+/* Explore Page Styles */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    padding: 2px;
+}
+
+.explore-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.explore-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Upload Page Styles */
+#upload-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#file-input, #caption-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #262626;
+    background-color: #000;
+    color: #fff;
+}
+
+#caption-input {
+    height: 100px;
+    resize: none;
+}
+
+#upload-form button {
+    padding: 10px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Profile Page Styles */
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #262626;
+}
+
+.profile-pic.large {
+    width: 80px;
+    height: 80px;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    padding: 2px;
+}
+
+.profile-grid-item {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.profile-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Utility Classes */
+.material-icons {
+    color: #fff;
+}
+
